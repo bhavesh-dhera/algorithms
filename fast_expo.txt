@@ -1,0 +1,24 @@
+public static long fast_expo(long base,long exp){
+			long res = 1;
+			int M = 1000000007;
+			//for fermat's little theorem uncomment
+			/*while(exp<0)
+				exp+=(M-1);
+			if( exp >=(M-1))
+				exp=exp%(M-1);*/
+			long g = (long)Math.floor(Math.log(exp)/Math.log(2));
+			long temp = exp;
+			while(exp > 0){
+				if(((temp>>g)&1L)==1L){
+					res = ((res%M)*(res%M))%M;
+					res = ((res%M)*(base%M))%M;
+					exp = exp>>1L;
+				}
+				else{
+					res = ((res%M)*(res%M))%M;
+					exp = exp>>1L;
+				}
+				g--;
+			}
+			return res%M;
+	}
