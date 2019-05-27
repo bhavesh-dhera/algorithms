@@ -1,0 +1,4 @@
+lo	hi	mid	          while(??)
+m+1    m-1      lo+(hi-lo)/2      lo<=hi
+m+1     m       lo+(hi-lo)/2      lo<hi
+m      m-1      lo+(hi-lo+1)/2    lo<hi
