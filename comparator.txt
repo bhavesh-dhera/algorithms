@@ -1,0 +1,5 @@
+Arrays.sort(pair, new Comparator<int[]>(){
+			public int compare(final int[] entry1, final int[] entry2){
+				return (entry1[0] - entry2[0]); //for ascending order
+			}
+		});

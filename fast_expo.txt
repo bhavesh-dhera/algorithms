@@ -1,7 +1,7 @@
 public static long fast_expo(long base,long exp){
 			long res = 1;
 			int M = 1000000007;
-			//for fermat's little theorem uncomment(as 1000000007 is prime)
+			//for fermat's little theorem uncomment(as 10^9+7 is prime)
 			/*while(exp<0)
 				exp+=(M-1);
 			if( exp >=(M-1))
